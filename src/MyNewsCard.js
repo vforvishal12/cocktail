@@ -28,7 +28,7 @@ const MyNewsCard = ({articles}) => {
 			       <Card.Text><Spinner animation="grow" variant="warning" /> Instructions :- {article.strInstructions}   
 			      </Card.Text>
 <Card.Text>
-			     { (article.strIngredient1 === 'null') ? <div></div> : <div><span class="label label-danger">{article.strIngredient1} - </span>  {article.strMeasure1}</div> 
+			     { (article.strIngredient1 === 'null') ? <div></div> : <div><span class="label label-danger">{article.strIngredient1} </span>  {article.strMeasure1}</div> 
 					
 				}	
 			     { (article.strIngredient2 === 'null') ? <div></div> 
