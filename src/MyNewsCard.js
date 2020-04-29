@@ -3,7 +3,13 @@ import Card from 'react-bootstrap/Card';
 import Spinner from 'react-bootstrap/Spinner';
 //import CardGroup from 'react-bootstrap/CardGroup';
 
+import Button from 'react-bootstrap/Button';
+
 const MyNewsCard = ({articles}) => {
+	function refreshPage() {
+    window.location.reload(false);
+  }
+	
     return (
         <div>
 
@@ -95,6 +101,7 @@ const MyNewsCard = ({articles}) => {
 				
 
             ))} 
+             <Button variant="info" onClick={refreshPage} size="lg">Next Drink</Button>
             
 
         </div>
